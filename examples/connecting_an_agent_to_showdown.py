@@ -8,15 +8,15 @@ from poke_env import ShowdownServerConfiguration, PlayerConfiguration
 async def main():
     # We create a random player
     player = RandomPlayer(
-        player_configuration=PlayerConfiguration("bot_username", "bot_password"),
+        player_configuration=PlayerConfiguration("fypBOT", "fypBOT123*"),
         server_configuration=ShowdownServerConfiguration,
     )
 
     # Sending challenges to 'your_username'
-    await player.send_challenges("your_username", n_challenges=1)
+    # await player.send_challenges("your_username", n_challenges=1)
 
     # Accepting one challenge from any user
-    # await player.accept_challenges(None, 1)
+    await player.accept_challenges(None, 1)
 
     # Accepting three challenges from 'your_username'
     # await player.accept_challenges('your_username', 3)
